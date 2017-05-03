@@ -13,34 +13,58 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let arrayOfImages = [ "1", "2", "3", "4", "5", "6", "7"]
+    let arrayOfTitles = [ "One", "Two", "Three", "Four", "Five", "Six", "Seven"]
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let tabBar = UITabBarController()
+        tabBar.viewControllers = self.getArrayOfViewControllers()
+        self.customiseTabItems(tabBar: tabBar.tabBar)
+        // set tabBar as root
+        self.window?.rootViewController = tabBar
+        tabBar.moreNavigationController.topViewController?.view.reloadInputViews() //gets the icons to show in the more view controller
+        self.window?.makeKeyAndVisible()
+
+        
         return true
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
+    func getArrayOfViewControllers() -> [ViewController] {
+        
+        let vc1 = UIStoryboard.init(name: "1", bundle: Bundle.main).instantiateInitialViewController()
+        let vc2 = UIStoryboard.init(name: "2", bundle: Bundle.main).instantiateInitialViewController()
+        let vc3 = UIStoryboard.init(name: "3", bundle: Bundle.main).instantiateInitialViewController()
+        let vc4 = UIStoryboard.init(name: "4", bundle: Bundle.main).instantiateInitialViewController()
+        let vc5 = UIStoryboard.init(name: "5", bundle: Bundle.main).instantiateInitialViewController()
+        let vc6 = UIStoryboard.init(name: "6", bundle: Bundle.main).instantiateInitialViewController()
+        let vc7 = UIStoryboard.init(name: "7", bundle: Bundle.main).instantiateInitialViewController()
+        
+        let arrayOfVC:[UIViewController] = [vc1!, vc2!,vc3!,
+                                            vc4!,vc5!, vc6!, vc7!]
+        
+        for (index, value) in arrayOfVC.enumerated() {
+            let tabBarItem = UITabBarItem()
+            tabBarItem.title = arrayOfTitles[index]
+            tabBarItem.image = UIImage(named: arrayOfImages[index])
+            value.tabBarItem = tabBarItem
+        }
+        
+        return arrayOfVC as! [ViewController]
+        
     }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    func customiseTabItems(tabBar: UITabBar) {
+        for item in tabBar.items! {
+            item.image = UIImage(named: arrayOfImages[tabBar.items!.index(of: item)!])
+            item.title = arrayOfTitles[tabBar.items!.index(of: item)!]
+        }
     }
 
 
 }
 
+extension AppDelegate: UITabBarControllerDelegate {
+    
+    
+}

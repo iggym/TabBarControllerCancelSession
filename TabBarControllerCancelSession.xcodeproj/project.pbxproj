@@ -14,6 +14,16 @@
 		DC4126391EB93E3000BB0BBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4126371EB93E3000BB0BBD /* LaunchScreen.storyboard */; };
 		DC4126441EB93E3000BB0BBD /* TabBarControllerCancelSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4126431EB93E3000BB0BBD /* TabBarControllerCancelSessionTests.swift */; };
 		DC41264F1EB93E3000BB0BBD /* TabBarControllerCancelSessionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC41264E1EB93E3000BB0BBD /* TabBarControllerCancelSessionUITests.swift */; };
+		DC41266C1EB9601F00BB0BBD /* 1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC41266B1EB9601F00BB0BBD /* 1.storyboard */; };
+		DC4126731EB9608000BB0BBD /* 2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC41266D1EB9608000BB0BBD /* 2.storyboard */; };
+		DC4126741EB9608000BB0BBD /* 3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC41266E1EB9608000BB0BBD /* 3.storyboard */; };
+		DC4126751EB9608000BB0BBD /* 4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC41266F1EB9608000BB0BBD /* 4.storyboard */; };
+		DC4126761EB9608000BB0BBD /* 5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4126701EB9608000BB0BBD /* 5.storyboard */; };
+		DC4126771EB9608000BB0BBD /* 6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4126711EB9608000BB0BBD /* 6.storyboard */; };
+		DC4126781EB9608000BB0BBD /* 7.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4126721EB9608000BB0BBD /* 7.storyboard */; };
+		DC41267C1EB9706300BB0BBD /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4126791EB9706300BB0BBD /* ViewController1.swift */; };
+		DC41267D1EB9706300BB0BBD /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC41267A1EB9706300BB0BBD /* ViewController2.swift */; };
+		DC41267E1EB9706300BB0BBD /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC41267B1EB9706300BB0BBD /* ViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +57,16 @@
 		DC41264A1EB93E3000BB0BBD /* TabBarControllerCancelSessionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBarControllerCancelSessionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC41264E1EB93E3000BB0BBD /* TabBarControllerCancelSessionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerCancelSessionUITests.swift; sourceTree = "<group>"; };
 		DC4126501EB93E3000BB0BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC41266B1EB9601F00BB0BBD /* 1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 1.storyboard; sourceTree = "<group>"; };
+		DC41266D1EB9608000BB0BBD /* 2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 2.storyboard; sourceTree = "<group>"; };
+		DC41266E1EB9608000BB0BBD /* 3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 3.storyboard; sourceTree = "<group>"; };
+		DC41266F1EB9608000BB0BBD /* 4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 4.storyboard; sourceTree = "<group>"; };
+		DC4126701EB9608000BB0BBD /* 5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 5.storyboard; sourceTree = "<group>"; };
+		DC4126711EB9608000BB0BBD /* 6.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 6.storyboard; sourceTree = "<group>"; };
+		DC4126721EB9608000BB0BBD /* 7.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 7.storyboard; sourceTree = "<group>"; };
+		DC4126791EB9706300BB0BBD /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		DC41267A1EB9706300BB0BBD /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		DC41267B1EB9706300BB0BBD /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +117,10 @@
 		DC41262D1EB93E3000BB0BBD /* TabBarControllerCancelSession */ = {
 			isa = PBXGroup;
 			children = (
+				DC4126791EB9706300BB0BBD /* ViewController1.swift */,
+				DC41267A1EB9706300BB0BBD /* ViewController2.swift */,
+				DC41267B1EB9706300BB0BBD /* ViewController3.swift */,
+				DC41266A1EB93FEE00BB0BBD /* Storyboards */,
 				DC41262E1EB93E3000BB0BBD /* AppDelegate.swift */,
 				DC4126301EB93E3000BB0BBD /* ViewController.swift */,
 				DC4126321EB93E3000BB0BBD /* Main.storyboard */,
@@ -123,6 +147,20 @@
 				DC4126501EB93E3000BB0BBD /* Info.plist */,
 			);
 			path = TabBarControllerCancelSessionUITests;
+			sourceTree = "<group>";
+		};
+		DC41266A1EB93FEE00BB0BBD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DC41266D1EB9608000BB0BBD /* 2.storyboard */,
+				DC41266E1EB9608000BB0BBD /* 3.storyboard */,
+				DC41266F1EB9608000BB0BBD /* 4.storyboard */,
+				DC4126701EB9608000BB0BBD /* 5.storyboard */,
+				DC4126711EB9608000BB0BBD /* 6.storyboard */,
+				DC4126721EB9608000BB0BBD /* 7.storyboard */,
+				DC41266B1EB9601F00BB0BBD /* 1.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +273,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4126761EB9608000BB0BBD /* 5.storyboard in Resources */,
+				DC4126741EB9608000BB0BBD /* 3.storyboard in Resources */,
+				DC4126781EB9608000BB0BBD /* 7.storyboard in Resources */,
 				DC4126391EB93E3000BB0BBD /* LaunchScreen.storyboard in Resources */,
+				DC4126751EB9608000BB0BBD /* 4.storyboard in Resources */,
+				DC41266C1EB9601F00BB0BBD /* 1.storyboard in Resources */,
+				DC4126771EB9608000BB0BBD /* 6.storyboard in Resources */,
 				DC4126361EB93E3000BB0BBD /* Assets.xcassets in Resources */,
 				DC4126341EB93E3000BB0BBD /* Main.storyboard in Resources */,
+				DC4126731EB9608000BB0BBD /* 2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +307,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC41267E1EB9706300BB0BBD /* ViewController3.swift in Sources */,
+				DC41267C1EB9706300BB0BBD /* ViewController1.swift in Sources */,
+				DC41267D1EB9706300BB0BBD /* ViewController2.swift in Sources */,
 				DC4126311EB93E3000BB0BBD /* ViewController.swift in Sources */,
 				DC41262F1EB93E3000BB0BBD /* AppDelegate.swift in Sources */,
 			);
