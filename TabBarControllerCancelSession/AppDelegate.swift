@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let arrayOfImages = [ "1", "2", "3", "4", "5", "6", "7"]
     let arrayOfTitles = [ "One", "Two", "Three", "Four", "Five", "Six", "Seven"]
-
+    var tabBarController: UITabBarController? = nil
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = tabBar
         tabBar.moreNavigationController.topViewController?.view.reloadInputViews() //gets the icons to show in the more view controller
         self.window?.makeKeyAndVisible()
-
+        tabBarController = tabBar
         
         return true
     }
